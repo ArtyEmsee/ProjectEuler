@@ -5,7 +5,16 @@
 
 //Find the sum of all the multiples of 3 or 5 below 1000.
 
-
+projEuler1 = () => {
+  return [...Array(1000).keys()]
+    .filter(v => {
+      return v % 3 === 0 || v % 5 === 0
+    })
+    .reduce((o, v) => {
+      o += v
+      return o
+    }, 0)
+}
 
 //[...Array(1000).keys()] This basically creates an array of 0 to 1000 by using the
 //spread operator inside of brackets. It's useful for determining how many times you

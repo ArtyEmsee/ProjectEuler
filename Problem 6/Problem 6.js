@@ -1,5 +1,3 @@
-
-
 projEuler6 = () => {
   let refArr = [...Array(100).keys()]
     .map(v => v += 1),
